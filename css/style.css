@@ -1,0 +1,36 @@
+.branding {
+  font-size:17px;
+}
+
+.navigation{
+  font-size:17px;
+}
+
+.showcase{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Orthopedic\ Doctor.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 600px;
+  padding:140px 100px;
+  color:#fff;
+}
+
+.showcase h1{
+  font-size:40px;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+.showcase hr{
+  width:100px;
+  margin:auto;
+  border-width:6px;
+}
+
+.threecards{
+  min-height: 350px;
+}
+
+.fa-notes-medical{
+  font-size:200px;
+}
