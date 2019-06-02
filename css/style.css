@@ -11,14 +11,8 @@
   background-repeat: no-repeat;
   background-position:center;
   height: 600px;
-  padding:140px 100px;
+  /*padding:140px 100px;*/
   color:#fff;
-}
-
-.showcase h1{
-  font-size:40px;
-  font-weight:700;
-  text-transform: uppercase;
 }
 
 .showcase hr{
@@ -27,10 +21,48 @@
   border-width:6px;
 }
 
+
+
+
 .threecards{
   min-height: 350px;
+  
 }
 
-.fa-notes-medical{
-  font-size:200px;
+
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .showcase h1{
+    font-size: 60px;
+    font-weight:700;
+    text-transform: uppercase;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .showcase h1
+  {
+    font-size: 40px;
+    font-weight:700;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .fa-clock,
+  .fa-phone,
+  .fa-map-marker {
+    font-size:60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fa-clock,
+  .fa-phone,
+  .fa-map-marker {
+    font-size:40px;
+  }
 }
