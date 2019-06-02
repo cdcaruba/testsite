@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | Orthoclinic Aruba</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <style>
   html {
@@ -18,9 +18,9 @@
     <!-- NAVIGATION -->
    
       <div class="w3-bar w3-top w3-teal">
-        <span class="branding w3-bar-item w3-mobile">Orthoclinic Aruba</span>
+        <span class="branding w3-bar-item w3-mobile"> <a href="#Home" style="text-decoration:none">Orthoclinic Aruba</a></span>
         <span class="navigation w3-right w3-hide-small">
-          <a href="#" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Home</a>
+          <a href="#Home" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Home</a>
           <a href="#About" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">About</a>
           <a href="#Physicians" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Physicians</a>
           <a href="#Contact" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Contact</a>
@@ -28,9 +28,9 @@
       </div>
     
     <!-- SHOWCASE -->
-    <section class="showcase w3-padding-64 w3-mobile">
-      <div class="w3-container w3-center w3-mobile">
-        <h1 class="w3-text-shadow w3-animate-opacity w3-auto">Welcome to Orthoclinic Aruba</h1>
+    <section id="Home" class="showcase w3-padding-64">
+      <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow w3-animate-opacity">Welcome to Orthoclinic Aruba</h1>
          <hr class="w3-animate-opacity">
          <br>
          <h2 class="w3-margin w3-xlarge">
@@ -127,7 +127,7 @@
     </div>
     
     <!-- Cards -->
-    <div id="Contact" class="w3-row-padding w3-light-grey">
+    <section id="Contact" class="w3-center w3-row-padding w3-light-grey">
       
       <div class="w3-center w3-padding-32">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
@@ -136,56 +136,36 @@
           <!-- Opening hours -->
         <div class="w3-third">
           <div class="threecards w3-card w3-container w3-margin-bottom">
-          <h3>Opening hours</h3><br>
-          <i class="fa fa-clock-o w3-margin-bottom w3-text-theme  w3-text-teal" style="font-size:60px;"></i>
-          <table class="w3-table">
-                    <tr>
-                        <td><b>Monday – Friday</b></td>
-                        <td class="w3-right-align">07:00 – 15:00</td>
-                    </tr>
-                    <tr>
-                        <td><b>Saturday</b></td>
-                        <td class="w3-right-align">Closed</td>
-                    </tr>
-                    <tr>
-                        <td><b>Sunday</b></td>
-                        <td class="w3-right-align">Closed</td>
-                    </tr>
-            </table>
+            <h3>Opening hours</h3><br>
+            <i class="fa fa-clock w3-margin-bottom w3-text-theme  w3-text-teal"></i>
+            <p><b>Moday – Friday </b></p>
+            <p>07:00 – 15:00</p>
+            <p><b>Saturday & Sunday</b></p>
+            <p>Closed</p>
           </div>
         </div>
           <!-- Phone -->
         <div class="w3-third">
           <div class="threecards w3-card w3-container w3-margin-bottom">
-          <h3>Phone</h3><br>
-          <i class="fa fa-phone w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
-          <table class= "w3-table">
-                    <tr>
-                        <td><b>Phone</b></td>
-                        <td class="w3-right-align">+297 587 5070</td>
-                    </tr>
-                    <tr>
-                        <td><b>Emergency</b></td>
-                        <td class="w3-right-align">911</td>
-                    </tr>
-                    <tr>
-                        <td><b>Email</b></td>
-                        <td class="w3-right-align">office@orthoclinic.com</td>
-                    </tr>
-            </table>
+            <h3>Phone</h3><br>
+            <i class="fa fa-phone w3-margin-bottom w3-text-theme w3-text-teal fa-responsive"></i>
+             <p><b>Phone </b></p>
+            <p>+297 587 5070</p>
+            <p><b>Emergency</b></p>
+            <p>911</p>
           </div>
         </div>
          <!-- Location -->
         <div class="w3-third">
           <div class="threecards w3-card w3-container w3-margin-bottom">
           <h3>Location</h3><br>
-          <i class="fa fa-map-marker w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
+          <i class="fa fa-map-marker w3-margin-bottom w3-text-theme w3-text-teal fa-responsive"></i>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6353581099593!2d-70.06111058542689!3d12.540298491139884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85472c99ec249f%3A0x9b051f20e766c4e6!2sOrthoclinic+Aruba!5e0!3m2!1sen!2s!4v1554851277481!5m2!1sen!2s" width=100% frameborder="0" style="border:0" allowfullscreen>
             </iframe>
           </div>
         </div>
       
-    </div>
+    </section>
 
 
 
