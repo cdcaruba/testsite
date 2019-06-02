@@ -5,27 +5,32 @@
     <title>HOME | Orthoclinic Aruba</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <link rel="stylesheet" href="css/style.css">
+  <style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
   </head>
   <body>
     <!-- NAVIGATION -->
-   <div class="w3-top">
-      <div class="w3-bar w3-teal">
+   
+      <div class="w3-bar w3-top w3-teal">
         <span class="branding w3-bar-item w3-mobile">Orthoclinic Aruba</span>
-        <span class="navigation w3-right w3-mobile">
+        <span class="navigation w3-right w3-hide-small">
           <a href="#" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Home</a>
           <a href="#About" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">About</a>
           <a href="#Physicians" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Physicians</a>
-          <a href="#Treatments" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Treatments</a>
+          <a href="#Contact" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Contact</a>
         </span>
       </div>
-    </div>
+    
     <!-- SHOWCASE -->
-    <section class="showcase w3-mobile">
+    <section class="showcase w3-padding-64 w3-mobile">
       <div class="w3-container w3-center w3-mobile">
-        <h1 class="w3-text-shadow w3-animate-opacity">Welcome to Orthoclinic Aruba</h1>
+        <h1 class="w3-text-shadow w3-animate-opacity w3-auto">Welcome to Orthoclinic Aruba</h1>
          <hr class="w3-animate-opacity">
          <br>
          <h2 class="w3-margin w3-xlarge">
@@ -35,76 +40,18 @@
       </div>
     </section>
 
-    
-    <!-- Cards -->
-    <div class="w3-row-padding w3-center w3-margin-top w3-text-dark-grey">
-      <!-- Opening hours -->  
-      <div class="w3-third">
-        <div class="threecards w3-card w3-container">
-        <h3>Opening hours</h3><br>
-        <i class="fa fa-clock-o w3-margin-bottom w3-text-theme  w3-text-teal" style="font-size:60px;"></i>
-        <table class="w3-table">
-                  <tr>
-                      <td><b>Monday – Friday</b></td>
-                      <td class="w3-right-align">07:00 – 15:00</td>
-                  </tr>
-                  <tr>
-                      <td><b>Saturday</b></td>
-                      <td class="w3-right-align">Closed</td>
-                  </tr>
-                  <tr>
-                      <td><b>Sunday</b></td>
-                      <td class="w3-right-align">Closed</td>
-                  </tr>
-          </table>
-        </div>
-      </div>
-
-      <!-- Contact Us -->
-           <div class="w3-third">
-        <div class="threecards w3-card w3-container">
-        <h3>Contact us</h3><br>
-        <i class="fa fa-phone w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
-        <table class= "w3-table">
-                  <tr>
-                      <td><b>Phone</b></td>
-                      <td class="w3-right-align">+297 587 5070</td>
-                  </tr>
-                  <tr>
-                      <td><b>Emergency</b></td>
-                      <td class="w3-right-align">911</td>
-                  </tr>
-                  <tr>
-                      <td><b>Email</b></td>
-                      <td class="w3-right-align">office@orthoclinic.com</td>
-                  </tr>
-          </table>
-        </div>
-      </div>
-     
-      <!-- Location -->
-      <div class="w3-third">
-        <div class="threecards w3-card w3-container">
-        <h3>Location</h3><br>
-        <i class="fa fa-map-marker w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6353581099593!2d-70.06111058542689!3d12.540298491139884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85472c99ec249f%3A0x9b051f20e766c4e6!2sOrthoclinic+Aruba!5e0!3m2!1sen!2s!4v1554851277481!5m2!1sen!2s" width=100% frameborder="0" style="border:0" allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- About us -->
-    <div id = "About" class="w3-row-padding w3-padding-64 w3-light-grey w3-mobile"> 
-      <div class="w3-center">
+  <!--About us-->
+    <div id="About" class="w3-padding-32 w3-light-grey w3-mobile">
+      <div class="w3-padding-32 w3-center">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Us</span>
       </div>
-      <div class="w3-content">
-        <div class="w3-third w3-left">
-          <i class="fas fa-notes-medical w3-padding-64 w3-text-teal w3-margin-right" style="font-size: 120px;"></i> 
+      <div class="w3-container">
+        <div class="w3-container w3-third w3-mobile">
+          <img class = "w3-image w3-container w3-greyscale-min" src="img/OrthoclinicAruba.png" alt="Office building" style="width:100%;">
         </div>
-        <div class="w3-twothird w3-text-dark-grey w3-padding-32">
+        <div class="w3-container w3-twothird w3-left w3-mobile">
           <h5 class=" w3-text-dark-grey">Orthoclinic Aruba was founded in 1864 when Aruba had only 4 inhabitants, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-          <img class = "w3-padding w3-greyscale-min" src="img/OrthoclinicAruba.png" alt="Office building" style="width:70%">
+          
           <p class="w3-text-grey">Many people will experience muscle and joint pain which influences their quality of life. This could be because of osteoarthritis or because of a sport injury or an accident. At the Orthoclinic of Aruba we are there to help you with your problem. If you are local and are having AZV insurance, you will need a referral letter from your general practitioner. If you are here on a vacation you can walk in during opening hours or call us for an appointment, also if you’re looking for a second opinion we’re happy to help you. The Orthopaedic surgeon will hear your story, perform a physical exam and, if necessary, require additional examinations like X-rays or an ultrasound. Together with the Orthopaedic surgeon a treatment plan will be made and/or advise will be provided. Treatment options could include general recommendations, painkillers, intra-articular injections / aspiration. In case of an accident, sometimes an operation is indicated.</p>
         </div>
       </div>
@@ -115,9 +62,8 @@
       <div class="w3-center w3-padding-64">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Physicians</span>
       </div>
-
       <div class="w3-third w3-margin-bottom w3-text-grey">
-        <div class="w3-card-4">
+        <div class="w3-card">
           <img src="img/Avayar_PH.jpg" class = "w3-circle" alt="Dr. Patrick Haime" style="width:100%;max-width:200px">
           <div class="w3-container">
             <h3 class = "w3-text-dark-gray">Patrick Haime <br> MD</h3>
@@ -138,7 +84,7 @@
       </div>
 
       <div class="w3-third w3-margin-bottom w3-text-grey">
-        <div class="w3-card-4">
+        <div class="w3-card">
           <img src="img/Avatar_CH.jpg" class = "w3-circle" alt="Dr. Caroline Hoenders" style="width:100%;max-width:200px">
           <div class="w3-container">
             <h3 class = "w3-text-dark-gray">Caroline Hoenders <br>MD, PhD</h3>
@@ -159,7 +105,7 @@
       </div>
 
       <div class="w3-third w3-margin-bottom w3-text-grey">
-        <div class="w3-card-4">
+        <div class="w3-card">
           <img src="img/Avatar_DK.jpg" class = "w3-circle" alt="Dr. Dirk Kuiken" style="width:100%;max-width:200px">
           <div class="w3-container">
             <h3 class = "w3-text-dark-gray">Dirk Kuiken <br>MD</h3>
@@ -179,6 +125,70 @@
         </div>
       </div>
     </div>
+    
+    <!-- Cards -->
+    <div id="Contact" class="w3-row-padding w3-light-grey">
+      
+      <div class="w3-center w3-padding-32">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+      </div>
+      
+          <!-- Opening hours -->
+        <div class="w3-third">
+          <div class="threecards w3-card w3-container w3-margin-bottom">
+          <h3>Opening hours</h3><br>
+          <i class="fa fa-clock-o w3-margin-bottom w3-text-theme  w3-text-teal" style="font-size:60px;"></i>
+          <table class="w3-table">
+                    <tr>
+                        <td><b>Monday – Friday</b></td>
+                        <td class="w3-right-align">07:00 – 15:00</td>
+                    </tr>
+                    <tr>
+                        <td><b>Saturday</b></td>
+                        <td class="w3-right-align">Closed</td>
+                    </tr>
+                    <tr>
+                        <td><b>Sunday</b></td>
+                        <td class="w3-right-align">Closed</td>
+                    </tr>
+            </table>
+          </div>
+        </div>
+          <!-- Phone -->
+        <div class="w3-third">
+          <div class="threecards w3-card w3-container w3-margin-bottom">
+          <h3>Phone</h3><br>
+          <i class="fa fa-phone w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
+          <table class= "w3-table">
+                    <tr>
+                        <td><b>Phone</b></td>
+                        <td class="w3-right-align">+297 587 5070</td>
+                    </tr>
+                    <tr>
+                        <td><b>Emergency</b></td>
+                        <td class="w3-right-align">911</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td class="w3-right-align">office@orthoclinic.com</td>
+                    </tr>
+            </table>
+          </div>
+        </div>
+         <!-- Location -->
+        <div class="w3-third">
+          <div class="threecards w3-card w3-container w3-margin-bottom">
+          <h3>Location</h3><br>
+          <i class="fa fa-map-marker w3-margin-bottom w3-text-theme w3-text-teal" style="font-size:60px;"></i>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.6353581099593!2d-70.06111058542689!3d12.540298491139884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85472c99ec249f%3A0x9b051f20e766c4e6!2sOrthoclinic+Aruba!5e0!3m2!1sen!2s!4v1554851277481!5m2!1sen!2s" width=100% frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      
+    </div>
+
+
+
 
 <!-- Footer -->
 <footer class="w3-container w3-grey w3-center">
@@ -191,7 +201,7 @@
     var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
-    } else { 
+    } else {
       x.className = x.className.replace(" w3-show", "");
     }
   }
