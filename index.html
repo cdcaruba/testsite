@@ -8,15 +8,42 @@
     <link rel="stylesheet" href="css/style.css">
   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <style>
-<!-- html {
-  scroll-behavior: smooth;
-} -->
-</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Smooth Scroll script provided by w3.org -->
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 450, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+    <!--style>
+      html { scroll-behavior: smooth; }
+    </style>
   </head>
-  <body>
+  <body-->
     <!-- NAVIGATION -->
-   
+
       <div class="w3-bar w3-top w3-teal">
         <span class="branding w3-bar-item w3-mobile"> <a href="#Home" style="text-decoration:none">Orthoclinic Aruba</a></span>
         <span class="navigation w3-right w3-hide-small">
@@ -26,7 +53,7 @@
           <a href="#Contact" class="w3-bar-item w3-button w3-hover-light-grey w3-mobile">Contact</a>
         </span>
       </div>
-    
+
     <!-- SHOWCASE -->
     <section id="Home" class="showcase w3-padding-64">
       <div class="w3-container w3-center">
@@ -36,7 +63,7 @@
          <h2 class="w3-margin w3-xlarge w3-animate-opacity">
                 <i class="fa fa-quote-right w3-xxlarge w3-text-white"></i><br>
                   <i>Our goal is to relieve you from your pain and help you to enjoy your stay on Aruba</i></h2>
-        
+
       </div>
     </section>
 
@@ -51,7 +78,7 @@
         </div>
         <div class="w3-container w3-twothird w3-left w3-mobile">
           <h5 class=" w3-text-dark-grey">Orthoclinic Aruba was founded in 1864 when Aruba had only 4 inhabitants, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-          
+
           <p class="w3-text-grey">Many people will experience muscle and joint pain which influences their quality of life. This could be because of osteoarthritis or because of a sport injury or an accident. At the Orthoclinic of Aruba we are there to help you with your problem. If you are local and are having AZV insurance, you will need a referral letter from your general practitioner. If you are here on a vacation you can walk in during opening hours or call us for an appointment, also if you’re looking for a second opinion we’re happy to help you. The Orthopaedic surgeon will hear your story, perform a physical exam and, if necessary, require additional examinations like X-rays or an ultrasound. Together with the Orthopaedic surgeon a treatment plan will be made and/or advise will be provided. Treatment options could include general recommendations, painkillers, intra-articular injections / aspiration. In case of an accident, sometimes an operation is indicated.</p>
         </div>
       </div>
@@ -125,14 +152,14 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Cards -->
     <section id="Contact" class="w3-center w3-row-padding w3-light-grey">
-      
+
       <div class="w3-center w3-padding-32">
         <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
       </div>
-      
+
           <!-- Opening hours -->
         <div class="w3-third">
           <div class="threecards w3-card w3-container w3-margin-bottom">
@@ -164,18 +191,15 @@
             </iframe>
           </div>
         </div>
-      
+
     </section>
-
-
-
 
 <!-- Footer -->
 <footer class="w3-container w3-grey w3-center">
   <p>Orthoclinic Aruba &copy; 2019</p>
 </footer>
 
- 
+
 <script>
   function showHideText(id) {
     var x = document.getElementById(id);
@@ -188,4 +212,3 @@
 </script>
 </body>
 </html>
-
